@@ -4,3 +4,7 @@ export interface GameScoreProps {
   isTieBreak: boolean;
   className?: string;
 };
+
+export interface ScoreProps {
+  $isHome?: boolean;
+}

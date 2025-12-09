@@ -3,3 +3,7 @@ export interface SetScoreProps {
   awayScore: number;
   className?: string;
 }
+
+export interface ScoreProps {
+  $isHome?: boolean;
+}

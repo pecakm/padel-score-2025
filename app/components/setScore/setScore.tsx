@@ -1,12 +1,17 @@
 'use client';
 
-import { Container } from './setScore.styled';
+import { Container, Label, ScoreContainer, Score, Separator } from './setScore.styled';
 import { SetScoreProps } from './setScore.types';
 
 export default function SetScore({ homeScore, awayScore, className }: SetScoreProps) {
   return (
     <Container className={className}>
-      Set: {homeScore} - {awayScore}
+      <Label>Set</Label>
+      <ScoreContainer>
+        <Score $isHome>{homeScore}</Score>
+        <Separator>—</Separator>
+        <Score>{awayScore}</Score>
+      </ScoreContainer>
     </Container>
   );
 }

@@ -3,3 +3,7 @@ export interface MatchScoreProps {
   awayScore: number;
   className?: string;
 }
+
+export interface ScoreProps {
+  $isHome?: boolean;
+}

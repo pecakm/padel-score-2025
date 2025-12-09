@@ -35,8 +35,12 @@ export default function Home() {
       />
       {!score.matchFinished && (
       <Buttons>
-        <Button onClick={() => dispatch({ type: 'incrementHome' })}>+</Button>
-        <Button onClick={() => dispatch({ type: 'incrementAway' })}>+</Button>
+        <Button onClick={() => dispatch({ type: 'incrementHome' })}>
+          Team 1 (+)
+        </Button>
+        <Button onClick={() => dispatch({ type: 'incrementAway' })}>
+          Team 2 (+)
+        </Button>
       </Buttons>
       )}
     </Container>
