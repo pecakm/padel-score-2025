@@ -11,7 +11,7 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: 'Padel Score',
-  description: 'Created by MP',
+  description: 'Created by Mikołaj Pęcak',
 };
 
 export default function RootLayout({
